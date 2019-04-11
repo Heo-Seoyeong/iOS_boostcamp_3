@@ -18,6 +18,16 @@
 		8DE9102A225CAD8200B9FDB5 /* MovieMainM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE91029225CAD8200B9FDB5 /* MovieMainM.swift */; };
 		8DE9102C225CAD9200B9FDB5 /* MovieDetailM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9102B225CAD9200B9FDB5 /* MovieDetailM.swift */; };
 		8DE9102E225CADA700B9FDB5 /* CommentM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9102D225CADA700B9FDB5 /* CommentM.swift */; };
+		8DF53FEE225ED2BD00C34426 /* StaticVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF53FED225ED2BD00C34426 /* StaticVariables.swift */; };
+		8DF53FF0225EE0A400C34426 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF53FEF225EE0A400C34426 /* Extensions.swift */; };
+		8DF53FF2225EE95E00C34426 /* MovieMainTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF53FF1225EE95E00C34426 /* MovieMainTableCell.swift */; };
+		8DF53FF4225F0A9D00C34426 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF53FF3225F0A9D00C34426 /* ImageService.swift */; };
+		8DF53FF7225F110100C34426 /* GradeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF53FF6225F110100C34426 /* GradeLabel.swift */; };
+		8DF53FF9225F125D00C34426 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF53FF8225F125D00C34426 /* CommentCell.swift */; };
+		8DF53FFB225F1A9C00C34426 /* MovieMainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF53FFA225F1A9C00C34426 /* MovieMainStorage.swift */; };
+		8DF53FFE225F1B0400C34426 /* CommentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF53FFD225F1B0400C34426 /* CommentStorage.swift */; };
+		8DF54000225F1D4200C34426 /* ServerConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF53FFF225F1D4200C34426 /* ServerConnect.swift */; };
+		8DF54002225F22E900C34426 /* MovieMainCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF54001225F22E900C34426 /* MovieMainCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +56,16 @@
 		8DE91029225CAD8200B9FDB5 /* MovieMainM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMainM.swift; sourceTree = "<group>"; };
 		8DE9102B225CAD9200B9FDB5 /* MovieDetailM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailM.swift; sourceTree = "<group>"; };
 		8DE9102D225CADA700B9FDB5 /* CommentM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentM.swift; sourceTree = "<group>"; };
+		8DF53FED225ED2BD00C34426 /* StaticVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticVariables.swift; sourceTree = "<group>"; };
+		8DF53FEF225EE0A400C34426 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8DF53FF1225EE95E00C34426 /* MovieMainTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMainTableCell.swift; sourceTree = "<group>"; };
+		8DF53FF3225F0A9D00C34426 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		8DF53FF6225F110100C34426 /* GradeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeLabel.swift; sourceTree = "<group>"; };
+		8DF53FF8225F125D00C34426 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		8DF53FFA225F1A9C00C34426 /* MovieMainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMainStorage.swift; sourceTree = "<group>"; };
+		8DF53FFD225F1B0400C34426 /* CommentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentStorage.swift; sourceTree = "<group>"; };
+		8DF53FFF225F1D4200C34426 /* ServerConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConnect.swift; sourceTree = "<group>"; };
+		8DF54001225F22E900C34426 /* MovieMainCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMainCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +108,15 @@
 			isa = PBXGroup;
 			children = (
 				8DE90FFF225CAA5100B9FDB5 /* AppDelegate.swift */,
-				8DE91028225CAD0700B9FDB5 /* Model */,
+				8DF53FED225ED2BD00C34426 /* StaticVariables.swift */,
+				8DF53FEF225EE0A400C34426 /* Extensions.swift */,
+				8DF53FF3225F0A9D00C34426 /* ImageService.swift */,
+				8DF53FFF225F1D4200C34426 /* ServerConnect.swift */,
 				8DE91027225CACFA00B9FDB5 /* ViewController */,
-				8DE9102F225CAE0C00B9FDB5 /* Controller */,
 				8DE91030225CAE4100B9FDB5 /* Cell */,
+				8DF53FF5225F10F300C34426 /* CustomUI */,
+				8DF53FFC225F1AD300C34426 /* Control */,
+				8DE91028225CAD0700B9FDB5 /* Codable */,
 				8DE91006225CAA5300B9FDB5 /* Assets.xcassets */,
 				8DE91008225CAA5300B9FDB5 /* LaunchScreen.storyboard */,
 				8DE9100B225CAA5300B9FDB5 /* Info.plist */,
@@ -119,28 +144,41 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		8DE91028225CAD0700B9FDB5 /* Model */ = {
+		8DE91028225CAD0700B9FDB5 /* Codable */ = {
 			isa = PBXGroup;
 			children = (
 				8DE91029225CAD8200B9FDB5 /* MovieMainM.swift */,
 				8DE9102B225CAD9200B9FDB5 /* MovieDetailM.swift */,
 				8DE9102D225CADA700B9FDB5 /* CommentM.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		8DE9102F225CAE0C00B9FDB5 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
+			path = Codable;
 			sourceTree = "<group>";
 		};
 		8DE91030225CAE4100B9FDB5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				8DF53FF1225EE95E00C34426 /* MovieMainTableCell.swift */,
+				8DF54001225F22E900C34426 /* MovieMainCollectionCell.swift */,
+				8DF53FF8225F125D00C34426 /* CommentCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		8DF53FF5225F10F300C34426 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				8DF53FF6225F110100C34426 /* GradeLabel.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		8DF53FFC225F1AD300C34426 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				8DF53FFA225F1A9C00C34426 /* MovieMainStorage.swift */,
+				8DF53FFD225F1B0400C34426 /* CommentStorage.swift */,
+			);
+			path = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,14 +281,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF53FF4225F0A9D00C34426 /* ImageService.swift in Sources */,
+				8DF54002225F22E900C34426 /* MovieMainCollectionCell.swift in Sources */,
 				8DE9102A225CAD8200B9FDB5 /* MovieMainM.swift in Sources */,
+				8DF54000225F1D4200C34426 /* ServerConnect.swift in Sources */,
 				8DE9102E225CADA700B9FDB5 /* CommentM.swift in Sources */,
 				8DE91026225CAC7E00B9FDB5 /* DetailVC.swift in Sources */,
+				8DF53FF0225EE0A400C34426 /* Extensions.swift in Sources */,
+				8DF53FF2225EE95E00C34426 /* MovieMainTableCell.swift in Sources */,
 				8DE91022225CAC6A00B9FDB5 /* TableVC.swift in Sources */,
+				8DF53FFE225F1B0400C34426 /* CommentStorage.swift in Sources */,
+				8DF53FFB225F1A9C00C34426 /* MovieMainStorage.swift in Sources */,
 				8DE91020225CAB7400B9FDB5 /* MainTabbarVC.swift in Sources */,
 				8DE91024225CAC7600B9FDB5 /* CollectionVC.swift in Sources */,
+				8DF53FEE225ED2BD00C34426 /* StaticVariables.swift in Sources */,
+				8DF53FF7225F110100C34426 /* GradeLabel.swift in Sources */,
 				8DE91000225CAA5100B9FDB5 /* AppDelegate.swift in Sources */,
 				8DE9102C225CAD9200B9FDB5 /* MovieDetailM.swift in Sources */,
+				8DF53FF9225F125D00C34426 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H63TGHS2A;
 				INFOPLIST_FILE = Boostcamp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,7 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H63TGHS2A;
 				INFOPLIST_FILE = Boostcamp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
