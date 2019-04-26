@@ -39,7 +39,7 @@ class DetailVC: UIViewController {
     }
 
     func set(by movie: MovieDetailM) {
-        self.title = movie.title
+        self.navigationItem.title = movie.title
     }
     
 }

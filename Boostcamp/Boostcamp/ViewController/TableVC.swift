@@ -22,9 +22,11 @@ class TableVC: UIViewController {
         self.tableView.dataSource = self
         self.tableView.register(MovieMainTableCell.self, forCellReuseIdentifier: movieCellIdentifier)
 
+        self.setNavigationItem()
         self.setRefreshControl()
         self.setupLayout()
 
+        self.navigationTitle()
         self.receiveMovies()
     }
 
@@ -39,6 +41,15 @@ class TableVC: UIViewController {
 
 extension TableVC {
 
+    func setNavigationItem() {
+        self.navigationItem.leftBarButtonItems = nil
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        navigationController?.navigationBar.isTranslucent = false
+        let image = #imageLiteral(resourceName: "Settings").withRenderingMode(.alwaysOriginal)
+        let closeItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleSetting(_:)))
+        self.navigationItem.rightBarButtonItem = closeItem
+    }
+
     func setRefreshControl() {
         if self.refreshControl == nil {
             self.refreshControl = UIRefreshControl()
@@ -52,6 +63,35 @@ extension TableVC {
             refreshControl.beginRefreshing()
         }
         self.receiveMovies()
+    }
+
+    @objc func handleSetting(_ sender: UIBarButtonItem) {
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "예매율", style: .default, handler: { _ in
+            self.navigationTitle(by: .advanceRate)
+            self.receiveMovies(by: .advanceRate)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "큐레이션", style: .default, handler: { _ in
+            self.navigationTitle(by: .cration)
+            self.receiveMovies(by: .cration)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "개봉일", style: .default, handler: { _ in
+            self.navigationTitle(by: .releaseDate)
+            self.receiveMovies(by: .releaseDate)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "취소", style: .cancel, handler: nil))
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+
+    func navigationTitle(by orderType: OrderType = .advanceRate) {
+        switch orderType {
+        case .advanceRate:
+            navigationItem.title = "예매율"
+        case .cration:
+            navigationItem.title = "큐레이션"
+        case .releaseDate:
+            navigationItem.title = "개봉일"
+        }
     }
 
 }
@@ -72,6 +112,8 @@ extension TableVC: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.isSelected = false
         let nextVC = DetailVC()
         nextVC.movieId = self.movieStorage.movie(at: indexPath.row).id
         self.navigationController?.pushViewController(nextVC, animated: true)
